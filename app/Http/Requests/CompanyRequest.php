@@ -26,8 +26,8 @@ class CompanyRequest extends FormRequest
         return [
             'name_ar' => 'required',
             'name_en' => 'required',
-            'logo' => 'required',
-            'website' => 'required',
+//            'logo' => 'required',
+//            'website' => 'required',
         ];
     }
 
@@ -36,8 +36,8 @@ class CompanyRequest extends FormRequest
         return [
             'name_ar.required' => trans('global.error_name_ar'),
             'name_en.required' => trans('global.error_name_en'),
-            'logo.required' => trans('global.error_logo'),
-            'website.required' => trans('global.error_website'),
+//            'logo.required' => trans('global.error_logo'),
+//            'website.required' => trans('global.error_website'),
         ];
     }
 }

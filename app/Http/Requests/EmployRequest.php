@@ -28,8 +28,8 @@ class EmployRequest extends FormRequest
             'first_name_en' => 'required',
             'last_name_ar' => 'required',
             'last_name_en' => 'required',
-            'email' => 'required',
-            'phone' => 'required',
+//            'email' => 'required',
+//            'phone' => 'required',
             'company_id' => 'required',
         ];
     }
@@ -41,8 +41,8 @@ class EmployRequest extends FormRequest
             'first_name_en.required' => trans('global.error_first_name_en'),
             'last_name_ar.required' => trans('global.error_last_name_ar'),
             'last_name_en.required' => trans('global.error_last_name_en'),
-            'email.required' => trans('global.error_email'),
-            'phone.required' => trans('global.error_phone'),
+//            'email.required' => trans('global.error_email'),
+//            'phone.required' => trans('global.error_phone'),
             'company_id.required' => trans('global.error_company'),
         ];
     }
