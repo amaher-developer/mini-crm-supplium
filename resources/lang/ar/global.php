@@ -40,5 +40,6 @@ return [
     'login' => 'تسجيل الدخول',
     'password' => 'كلمة المرور',
     'remember_me' => 'تذكرني',
+    'send_mail' => 'ارسال ايميل',
 
     ];

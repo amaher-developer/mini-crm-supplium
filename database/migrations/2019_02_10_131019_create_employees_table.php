@@ -19,7 +19,7 @@ class CreateEmployeesTable extends Migration
             $table->string('first_name_en');
             $table->string('last_name_ar');
             $table->string('last_name_en');
-            $table->string('email')->unique();
+            $table->string('email');
             $table->string('phone');
             $table->integer('company_id');
             $table->timestamps();

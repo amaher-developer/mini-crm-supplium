@@ -40,6 +40,7 @@ return [
     'login' => 'Login',
     'password' => 'Password',
     'remember_me' => 'Remember Me',
+    'send_mail' => 'Send Email',
 
 
     ];

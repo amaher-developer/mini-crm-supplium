@@ -7,6 +7,7 @@ use App\Http\Requests\CompanyRequest;
 use Faker\Provider\Image;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\File;
+use Illuminate\Support\Facades\Mail;
 
 class CompanyController extends Controller
 {
@@ -54,7 +55,15 @@ class CompanyController extends Controller
     public function store(CompanyRequest $request)
     {
         $company_inputs = $this->prepare_inputs($request->except(['_token']));
-        Company::create($company_inputs);
+        $company = Company::create($company_inputs);
+
+        // send email
+        Mail::send([], [], function ($message) use ($company) {
+            $message->to([$company['email']])
+                ->subject($company['name_'.\request('lang')])
+                ->setBody(trans('global.send_mail'));
+        });
+
         return redirect(route('listCompany'));
     }
 
