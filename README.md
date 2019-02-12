@@ -23,9 +23,15 @@ Basically, a project to manage companies and their employees. Mini-CRM.
    **The steps to run the project:**
    
 run migration. (#command: php artisan migrate)
+
 run seeder. (#command: php artisan db:seed)
+
 login using inputs (email, password) by (admin@admin.com, password).
+
 you can change the lang from admin panel(i started with two langs put can add more).
 
+when add company the email message will send to my email (you can config from .env file).
+
    **The demo of the project run on:**
+   
 http://fekra-web.com/demo/supplium/
